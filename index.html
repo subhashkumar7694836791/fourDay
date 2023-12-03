@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dayfour</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <h1 style="text-align: center;">this is search bar</h1>
+    <div class="main">
+      <div class="search-div">
+        <input type="text" placeholder="Search...">
+        <i class="ri-search-line"></i>
+      </div>
+    </div>
+    <script>
+        var search=document.querySelector('.ri-search-line');
+        var flag=0;
+        search.addEventListener('click', function(){
+            if(flag==0){
+            document.querySelector('input').style.display='none';
+            flag=1
+        }else{
+            document.querySelector('input').style.display='block';
+             flag=0
+        }
+        })
+    </script>
+</body>
+</html>
